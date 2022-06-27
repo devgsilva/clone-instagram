@@ -1,4 +1,5 @@
 :root {
     --grey: rgb(170, 170, 170);
+    --grey-border: rgb(170, 170, 170, .3);
     --blue: rgb(0, 162, 255);
 }

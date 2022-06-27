@@ -7,9 +7,10 @@ header {
     align-items: center;
     position: fixed;
     background-color: #fff;
+    border-bottom: 1px solid var(--grey-border);
 }
 
-header .container .nav-default {
+header .nav-container .nav-computer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,20 +19,20 @@ header .container .nav-default {
     max-width: 100%;
 }
 
-header .container .nav-default .logo {
+header .nav-container .nav-computer .logo {
     width: 25%;
 }
 
-header .container .nav-default .logo img {
+header .nav-container .nav-computer .logo img {
     max-width: 100%;
     max-height: 100%;
 }
 
-header .container .nav-default .search {
+header .nav-container .nav-computer .search {
     position: relative;
 }
 
-header .container .nav-default .search i {
+header .nav-container .nav-computer .search i {
     color: rgb(38, 38, 38);
     position: absolute;
     top: 7.5px;
@@ -39,7 +40,7 @@ header .container .nav-default .search i {
     font-size: 18px !important;
 }
 
-header .container .nav-default .search form input {
+header .nav-container .nav-computer .search form input {
     border-radius: 8px;
     outline: none !important;
     border: 0;
@@ -47,19 +48,84 @@ header .container .nav-default .search form input {
     color: rgb(38, 38, 38);
     padding: 2px 25px;
     height: 30px;
+    width: 100%;
+    max-width: 550px;
 }
 
-header .container .nav-default .painel-buttons {
+header .nav-container .nav-computer .painel-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-header .container .nav-default .painel-buttons-icon i {
+header .nav-container .nav-computer .painel-buttons-icon i {
     font-size: 26px !important;
 }
 
-header .container .nav-default .painel-buttons-icon {
+header .nav-container .nav-computer .painel-buttons-icon {
     margin: 0 10px;
+}
+
+header .nav-container .nav-mobile-top,
+header .nav-container .nav-mobile-bottom {
+    display: none;
+}
+
+@media (max-width: 1279px) {
+    header .nav-container .nav-computer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 780px;
+        max-width: 100%;
+    }
+    header .nav-container .nav-computer .logo {
+        width: 20%;
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        z-index: 1;
+        margin-bottom: 30px;
+    }
+    header .nav-container {
+        position: relative;
+    }
+    header .nav-container .nav-computer {
+        display: none !important;
+    }
+    header .nav-container .nav-mobile-top .logo {
+        width: auto;
+    }
+    header .nav-container {
+        width: 100%;
+        max-width: 767px;
+        padding-left: 1.5% !important;
+        padding-right: 1.5% !important;
+    }
+    header .nav-container .nav-mobile-top {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .nav-container .nav-mobile-bottom {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99999;
+        top: auto !important;
+        bottom: 0 !important;
+        background-color: #fff;
+        height: 60px;
+        left: 0;
+        border-top: 1px solid var(--grey-border);
+    }
 }

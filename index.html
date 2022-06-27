@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Instagram</title>
+    <title>Clone Instagram - by Guilherme Silva</title>
 
     <link rel="stylesheet" href="./assets/css/core.css">
 
@@ -19,8 +19,8 @@
 
 </head>
 <header>
-    <div class="container">
-        <nav class="nav-default">
+    <div class="nav-container">
+        <nav class="nav-computer">
             <div class="logo"><img src="./assets/images/instagram_logo.png" alt=""></div>
 
             <div class="search">
@@ -44,18 +44,82 @@
                     <a href="#"><i class="las la-compass"></i></a>
                 </div>
                 <div class="painel-buttons-icon">
-                    <a href="#"><i class="lab la-gratipay"></i></a>
+                    <a href="#"><i class="lar la-heart"></i></a>
                 </div>
                 <div class="painel-buttons-icon">
                     <a href="#"><i class="las la-user"></i></a>
                 </div>
             </div>
         </nav>
+
+        <nav class="nav-mobile-top">
+            <div class="painel-buttons">
+                <div class="painel-buttons-icon">
+                    <div class="painel-buttons-icon">
+                        <a href="#"><i class="las la-camera"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo">
+                <img src="./assets/images/instagram_logo.png" alt="">
+            </div>
+
+            <div class="painel-buttons">
+                <div class="painel-buttons-icon">
+                    <div class="painel-buttons-icon">
+                        <a href="#"><i class="lab la-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="nav-mobile-bottom">
+            <div class="painel-buttons">
+                <div class="painel-buttons-icon">
+                    <div class="painel-buttons-icon">
+                        <a href="#"><i class="las la-camera"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="painel-buttons">
+                <div class="painel-buttons-icon">
+                    <div class="painel-buttons-icon">
+                        <a href="#"><i class="lab la-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="painel-buttons">
+                <div class="painel-buttons-icon">
+                    <div class="painel-buttons-icon">
+                        <a href="#"><i class="lab la-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="painel-buttons">
+                <div class="painel-buttons-icon">
+                    <div class="painel-buttons-icon">
+                        <a href="#"><i class="lab la-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="painel-buttons">
+                <div class="painel-buttons-icon">
+                    <div class="painel-buttons-icon">
+                        <a href="#"><i class="lab la-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
+
 </header>
 
 <main>
-    <div class="mini-container">
+    <div class="main-container">
         <div class="content">
             <div class="column-left">
                 <div class="default-card card-pub">
@@ -77,7 +141,7 @@
                         <div class="menu-pub">
                             <div class="menu-pub-left">
                                 <div class="menu-pub-icon">
-                                    <a href="#"><i class="lab la-gratipay"></i></a>
+                                    <i class="lar la-heart"></i>
                                 </div>
                                 <div class="menu-pub-icon">
                                     <a href="#"><i class="las la-comment"></i></a>
@@ -97,7 +161,9 @@
                         </div>
                         <div class="description-pub p-5px-top">
                             <p><span>microsoft.design</span> Some of our favorite moments in the #Windows365 UX film created with <span class="special">@TendrilStudio</span> and
-                                <span class="special">@ZeligSound</span>. Visit the link in bio for the final result. <span class="special">#Microsoft</span> <span class="special">#Microsoft365</span> <span class="special">#Windows365</span> <span class="special">#CloudPC</span>                                <span class="special">#RnD</span> <span class="special">#Storytelling</span> <span class="special">#UXFilm</span> <span class="special">#MotionGraphics</span> </p>
+                                <span class="special">@ZeligSound</span>. Visit the link in bio for the final result.
+                                <span class="special">#Microsoft</span> <span class="special">#Microsoft365</span> <span class="special">#Windows365</span> <span class="special">#CloudPC</span> <span class="special">#RnD</span> <span class="special">#Storytelling</span>                                <span class="special">#UXFilm</span> <span class="special">#MotionGraphics</span>
+                            </p>
                         </div>
                         <div class="all-comments p-5px-top">
                             <p>See all 144 comments</p>
@@ -108,7 +174,7 @@
                         <div class="publish-comment p-5px-top">
                             <form action="#">
                                 <button><i class="las la-smile"></i></button>
-                                <input type="text" placeholder="add a comment">
+                                <input type="text" placeholder="add a comment" class="publish-input-comment">
                                 <button class="publish-button">Publish</button>
                             </form>
                         </div>
@@ -132,11 +198,113 @@
                             <a href="#">Change</a>
                         </div>
                     </div>
+                    <div class="suggestions-for-you-content">
+                        <div class="suggestions-for-you-title">
+                            <div class="suggestions-for-you-text-title">
+                                <p>Suggestions for you</p>
+                            </div>
+                            <div class="suggestions-for-you-see-all">
+                                <a href="#">See all</a>
+                            </div>
+                        </div>
+                        <div class="suggestions-for-you-porfile-item">
+                            <div class="suggestions-for-you-porfile-mini-infos">
+                                <div class="suggestions-for-you-porfile-picture">
+                                    <img src="./assets/images/hp.jpg" alt="">
+                                </div>
+                                <div class="suggestions-for-you-id-name">
+                                    <a href="#"><span>hp</span></a>
+                                    <small>Suggestions for you</small>
+                                </div>
+                            </div>
+                            <div class="suggestions-for-you-follow-this-profile">
+                                <a href="#">Follow</a>
+                            </div>
+                        </div>
+                        <div class="suggestions-for-you-porfile-item">
+                            <div class="suggestions-for-you-porfile-mini-infos">
+                                <div class="suggestions-for-you-porfile-picture">
+                                    <img src="./assets/images/intel.jpg" alt="">
+                                </div>
+                                <div class="suggestions-for-you-id-name">
+                                    <a href="#"><span>intel</span></a>
+                                    <small>Suggestions for you</small>
+                                </div>
+                            </div>
+                            <div class="suggestions-for-you-follow-this-profile">
+                                <a href="#">Follow</a>
+                            </div>
+                        </div>
+                        <div class="suggestions-for-you-porfile-item">
+                            <div class="suggestions-for-you-porfile-mini-infos">
+                                <div class="suggestions-for-you-porfile-picture">
+                                    <img src="./assets/images/apple.jpg" alt="">
+                                </div>
+                                <div class="suggestions-for-you-id-name">
+                                    <a href="#"><span>apple</span></a>
+                                    <small>Suggestions for you</small>
+                                </div>
+                            </div>
+                            <div class="suggestions-for-you-follow-this-profile">
+                                <a href="#">Follow</a>
+                            </div>
+                        </div>
+                        <div class="suggestions-for-you-porfile-item">
+                            <div class="suggestions-for-you-porfile-mini-infos">
+                                <div class="suggestions-for-you-porfile-picture">
+                                    <img src="./assets/images/dell.jpg" alt="">
+                                </div>
+                                <div class="suggestions-for-you-id-name">
+                                    <a href="#"><span>dell</span></a>
+                                    <small>Suggestions for you</small>
+                                </div>
+                            </div>
+                            <div class="suggestions-for-you-follow-this-profile">
+                                <a href="#">Follow</a>
+                            </div>
+                        </div>
+                        <div class="suggestions-for-you-porfile-item">
+                            <div class="suggestions-for-you-porfile-mini-infos">
+                                <div class="suggestions-for-you-porfile-picture">
+                                    <img src="./assets/images/linkedin.jpg" alt="">
+                                </div>
+                                <div class="suggestions-for-you-id-name">
+                                    <a href="#"><span>linkedin</span></a>
+                                    <small>Suggestions for you</small>
+                                </div>
+                            </div>
+                            <div class="suggestions-for-you-follow-this-profile">
+                                <a href="#">Follow</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-and-copyright">
+                        <div class="footer-links">
+                            <a href="#">About</a> - <a href="#">Help</a>
+                        </div>
+                        <div class="footer-copyright">
+                            <p>© 2022 INSTAGRAM FROM META</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+    $('.publish-input-comment').click(function() {
+        $('.publish-button').addClass('publish-button-enable');
+    });
+</script>
+
+<script>
+    $('.la-heart').click(function() {
+        $('.la-heart').toggleClass('red-color-insta');
+    });
+</script>
 
 <body>
 
