@@ -234,6 +234,10 @@ main .main-container .content .column-right .content-column-right .footer-and-co
     margin: 0 5px;
 }
 
+.menu-pub-icon {
+    cursor: pointer;
+}
+
 @media (max-width: 1279px) {
     main .main-container .content {
         display: flex;
