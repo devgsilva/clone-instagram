@@ -36,7 +36,7 @@ p span {
     padding-right: 30%;
 }
 
-.card-pub {
+.card-publication {
     max-width: 480px;
     width: 100%;
     min-height: 400px;
@@ -47,7 +47,7 @@ p span {
     border: 1px solid rgb(209, 208, 208);
 }
 
-.image-card img {
+.card-publication-image img {
     max-width: 520px;
     width: 100%;
 }
@@ -109,7 +109,7 @@ input {
         padding-left: 10%;
         padding-right: 10%;
     }
-    .card-pub {
+    .card-publication {
         max-width: 520px;
         width: 100%;
     }
@@ -124,7 +124,7 @@ input {
         padding-left: .5%;
         padding-right: .5%;
     }
-    .card-pub {
+    .card-publication {
         max-width: 520px;
         width: 100%;
         border: none;

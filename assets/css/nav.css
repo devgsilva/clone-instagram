@@ -24,8 +24,10 @@ header .nav-container .nav-computer .logo {
 }
 
 header .nav-container .nav-computer .logo img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    max-height: 39px;
 }
 
 header .nav-container .nav-computer .search {

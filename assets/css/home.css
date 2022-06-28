@@ -146,7 +146,7 @@ main .main-container .content .column-right .content-column-right .footer-and-co
 
 /* */
 
-.header-card {
+main .main-container .content .column-left .card-publication-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -155,26 +155,26 @@ main .main-container .content .column-right .content-column-right .footer-and-co
     padding: 0 10px 5px 10px;
 }
 
-.profile-pub {
+.card-publication-profile {
     display: flex;
     flex-direction: row;
     width: 75%;
 }
 
-.profile-pub-picture-name {
+.card-publication-profile-picture-name {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.profile-pub-picture-name p {
+.card-publication-profile-picture-name p {
     margin-top: -5px;
     margin-left: 5px;
     font-size: 14px;
     font-weight: 600;
 }
 
-.profile-pub-picture-name img {
+.card-publication-profile-picture-name img {
     width: 32px;
     border-radius: 50%;
 }
@@ -257,7 +257,7 @@ main .main-container .content .column-right .content-column-right .footer-and-co
 }
 
 @media (max-width: 767px) {
-    .header-card {
+    .card-publication-header {
         padding: 0 10px;
     }
 }
